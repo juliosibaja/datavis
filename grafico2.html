@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> Gráfico de Barras </title>
+    <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+<body>
+    <script>
+        $(function () {
+            $('#grafico').highcharts({
+            chart: {
+                    type: 'bar'
+                    },
+                    title: {
+                        text: 'Lanchonete Diniz: Consumo da Semana'
+                    },
+                    xAxis: {
+                        categories: ['Tapioca', 'Cafe', 'Suco', 'K K']
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Items consumidos'
+                        }
+                    },
+                    series: [{
+                            name: 'GIL',
+                            data: [0, 0, 3, 4]
+                        }, {
+                            name: 'Sa',
+                            data: [4, 4, 2, 2]
+                        }, {
+                            name: 'Ze',
+                            data: [5, 7, 0, 2]
+                        }]
+            });
+        });
+</script>
+        <div id="grafico" style="width:100%; height:400px;">
+        
+        
+        </div>
+
+</body>
+</html>

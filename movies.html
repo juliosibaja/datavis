@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> Gráfico de Barras </title>
+    <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+<body>
+    <script>
+        $(function () {
+            $('#grafico').highcharts({
+            chart: {
+                    type: 'bar'
+                    },
+                    title: {
+                        text: 'Filmes '
+                    },
+                    xAxis: {
+                        categories: ['Worldwide', 'Domestic', 'Brazil', 'Argentina']
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Items consumidos'
+                        }
+                    },
+                    series: [{
+                            name: 'Lord of the rings',
+                            data: [1119929521, 535381800, 9902206, 4698147]
+                        }, {
+                            name: 'Shutter Island',
+                            data: [294804195, 128012934, 4834195, 1578795]
+                        }, {
+                            name: 'Deadpool',
+                            data: [756971828,358587687 , 20602053, 4062085]
+                        }, {
+                            name: 'The Dark Knight Rises',
+                            data: [1084939099, 448139099, 27097031, 10955266]
+                        }, {
+                            name: 'Toy Story 3',
+                            data: [1063171911, 415004880, 23613926, 16026307]
+                        }]
+            });
+            
+            
+            $('#grafico2').highcharts({
+            chart: {
+                    type: 'line'
+                    },
+                    title: {
+                        text: 'Arrecadação nas Bilheterias na Semana de Estreia'
+                    },
+                    xAxis: {
+                        categories: ['Primeiro', 'Segundo', 'Terceiro', 'Quarto', 'Quinto', 'Sexto', 'Setimo']
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Valor arrecadado (US$) corrigido pela inflação'
+                        }
+                    },
+                    series: [{
+                            name: 'Lord of the rings',
+                            data: [49705200, 24556200 , 31469400 ,  39665200 , 33654600 , 19568800 , 18000500]
+                        }, {
+                            name: 'Shutter Island',
+                            data: [15384500 , 17838100 , 11713700 , 3653000 , 3446200 , 2887500 , 2941400]
+                        }, {
+                            name: 'Deadpool',
+                            data: [47335600 , 42508000 , 42591000 , 19759200 , 11559600 , 8617600 , 8023800 ]
+                        }, {
+                            name: 'The Dark Knight Rises',
+                            data: [ 84713100 , 50245300 , 44954200 , 21681900 , 19862900 , 15398400 , 14763600 ]
+                        }, {
+                            name: 'Toy Story 3',
+                            data: [ 45431000 , 40950900 , 35404000 , 17230100 , 16696900 , 14859200 , 14415200 ]
+                    }]
+            });
+        });
+</script>
+        <div id="grafico" style="width:100%; height:400px;">
+        </div>
+        <div id="grafico2" style="width:100%; height:400px;">
+        </div>
+
+</body>
+</html>
