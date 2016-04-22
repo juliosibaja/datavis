@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> Gráfico de Barras </title>
+    <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+<body>
+    <script>
+        $(function () {
+            $(document).ready(function () {
+                // Build the chart
+                Highcharts.theme = {
+                colors: ["#FF7F0E", "#FFBB78", "#2CA02C", "#D62728", "#FF9896","#C5B0D5", "#7F7F7F", "#BCBD22"]
+                }
+                Highcharts.setOptions(Highcharts.theme);
+                $('#grafico').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: 'Oscars por género'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: false
+                            },
+                            showInLegend: true
+                        }
+                    },
+                    series: [{
+                        name: 'Brands',
+                        //colorByPoint: true,
+                        data: [{
+                            name: 'Adventure',
+                            y: 3.22
+                        }, {
+                            name: 'Animation',
+                            y: 9.66
+                        }, {
+                            name: 'Biography',
+                            y: 22.58
+                        }, {
+                            name: 'Comedy',
+                            y: 6.44
+                        }, {
+                            name: 'Crime',
+                            y: 9.66
+                        },{
+                            name: 'Drama',
+                            y: 38.70
+                        }, {
+                            name: 'Romance',
+                            y: 3.22
+                        }, {
+                            name: 'Thriler',
+                            y: 6.44
+                        }]
+                    }]
+                });
+                
+            
+			
+			
+			$('#grafico1').highcharts({
+			legend: {
+						enabled: false
+					},
+            chart: {
+                    type: 'bar'
+                    },
+                    title: {
+                        text: 'Filmes por audiencia e por rottem tomatoes'
+                    },
+                    xAxis: {
+                        type: 'category',
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Items consumidos'
+                        },
+						labels: {
+							align: "right"
+						},
+						
+                    },
+                    series: [{
+						dataLabels: {
+							enabled: true,
+						  
+							color: '#FFFFFF',
+							align: 'right',
+							y: 0, // 10 pixels down from the top
+							x: 25,
+						},					
+					data: [
+						{
+							name: 'The Dark Knight',
+                            y: 96,
+							color: "#d64027"
+						},{
+							name: 'The Kings Speech',
+                            y: 93,
+							color: "#d0361e"
+						},{
+							name: 'The artist',
+                            y: 91,
+							color: "#c31f0a"
+						},{
+							name: 'The Help',
+                            y: 91,
+							color: "#91cc69"
+						},{
+							name: 'Slumdog Millionire',
+                            y: 90,
+							color: "#d64027"
+						},{
+							name: 'The Blind Side',
+                            y: 90,
+							color: "#4a8c1c"
+						},{
+							name: 'Juno',
+                            y: 89,
+							color: "#d64027"
+						},{
+							name: 'WALL-E',
+                            y: 89,
+							color: "#ca2c15"
+						},{
+							name: 'Milk',
+                            y: 88,
+							color: "#d64027"
+						},{
+							name: 'The Fighter',
+                            y: 88,
+							color: "#e85b41"
+						},{
+							name: 'Inglourius Basterds',
+                            y: 87,
+							color: "#f7705b"
+						},{
+							name: 'Black Swan',
+                            y: 86,
+							color: "#f7705b"
+						},{
+							name: 'Up',
+                            y: 86,
+							color: "#bd1100"
+						},{
+							name: 'Midnight in Paris',
+                            y: 84,
+							color: "#dc4930"
+						},{
+							name: 'No Country for Old Men',
+                            y: 84,
+							color: "#d0361e"
+						},{
+							name: 'Ratatouille',
+                            y: 84,
+							color: "#c31f0a"
+						},{
+							name: 'There Will Be Blood',
+                            y: 84,
+							color: "#e85b41"
+						},{
+							name: 'The Hurt Locker',
+                            y: 83,
+							color: "#c31f0a"
+						},{
+                            name: 'Beginners',
+                            y: 80,
+							z: 40,
+							color: "#fe9788",
+							 drilldown: 'Microsoft Internet Explorer',
+							 dataLabels: 10
+                        },{
+							name: 'Michael Clayton',
+                            y: 72,
+							color: "#ed634a"
+						}
+					]
+				}]
+            });
+			});
+        });
+        
+</script>
+        <div id="grafico1" style="width:90%; height:500px; display:inline-table">
+			
+        </div>
+		<div id="imagen" style="width:15%; height:100px;">
+			<img src="rotten.png" alt="ROTTEM" width="100%"  style="vertical-align: text-top;">
+        </div>
+		<div>--Será que as avaliações que fizeram as pessoas que assistiram o filme tem algum parecido com as avaliações que fazem os expertos de Rotten Tomatoes? Existem filmes que podem ser vistos pelo público como filmes muito bons mas os expertos de Rotten podem ter uma opinião distinta?</div>
+			<div>--As respostas daqui também são fáceis de obter, se consegue enxergar que por exemplo o filme The help tem uma boa avaliação pelos espectadores mas uma nota ruim por parte de rotten tomatões. Acontece o contrário para Ratatouille que tem boa nota do rotten tomatões mas não tem uma boa nota feita pelos espectadores.</div>
+			<div>--Aqui a diferença com o modelo que eu produzi foi que não consegui fazer que as marcas (“labels”) que usaram as pessoas de rotem tomatões, os labels que eles tem são as mesmas que se usam no eixo X, que é a pontuação que deram as pessoas comuns ao filme. Outra coisa que não funcionou foi fazer as do roten atualizáveis, as coras são escritas diretamente no código</div>
+			<hr><hr>
+        <div id="grafico" style="width:100%; height:100%;">
+        
+        
+        </div>
+			<div>Existe alguma relação entre a quantidade de dinheiro que se investe nos filmes e quantidade de Oscar que se obtém (isso para cada produtora)?</div>
+			<div>Aqui se vê como por exemplo tem pequenas produtoras que ganharam algum oscar e não precisaram investir tanto dinheiro. Mas se percebe que as que mais investiram obtiveram um pouco mais de prêmios. Podemos olhar como os independentes não precisaram de tanto dinheiro para ganhar mas também temos que analisar esse caso na minha opinião de uma maneira distinta.</div>
+			<div>Aqui nesse gráfico se conseguiu fazer tudo igual do que o do tableu</div>
+</body>
+</html>
