@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vinculando um vetor como dados</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+COMPARACION POR ORCAMENTO
+<div id="chart2"></div>
+COMPARACION POR LUCRO
+<div id="chart1"></div>
+<script type="text/javascript">
+    function render(data, comparator, chart) {
+        d3.select(chart).selectAll("div.h-bar")
+                .data(data)
+            .enter().append("div")
+            .attr("class", "h-bar")
+            .append("span");
+        
+        d3.select(chart).selectAll("div.h-bar")
+                .data(data)
+            .exit().remove();
+        
+        d3.select(chart).selectAll("div.h-bar")
+                .data(data)
+            .attr("class", "h-bar")
+            .style("width", function (d) {
+                if(chart.localeCompare("#chart1") == 0)
+                    return (d.worldwide_Gross_M) + "px";
+                else if (chart.localeCompare("#chart2") == 0)
+                    return (d.budget_M) + "px";
+            })
+            .select("span")
+                .text(function (d) {
+                    return d.film;
+                });
+         if(comparator)
+            d3.select(chart)
+                .selectAll("div.h-bar") 
+                .sort(comparator);
+    }
+
+    var comparePorLucro = function (a, b) { 
+        return a.worldwide_Gross_M > b.worldwide_Gross_M?-1:1;
+    };
+    var comparePorOrcamento = function (a, b) { 
+        return a.budget_M > b.budget_M?-1:1;
+    };
+    
+    d3.json("movies.json", function(error, json){ 
+        render(json, comparePorLucro,"#chart1");
+        render(json, comparePorOrcamento,"#chart2");
+    });
+</script>
+</body>
+</html>
