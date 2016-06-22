@@ -1,0 +1,212 @@
+[
+    {
+        "film": "Harry Potter and the Deathly Hallows Part 2",
+        "year": 2011,
+        "genre": "Fantasy",
+        "worldwide_Gross_M": 1328,
+        "budget_M": 125
+    },
+    {
+        "film": "Mission Impossible 4",
+        "year": 2011,
+        "genre": "Action",
+        "worldwide_Gross_M": 689,
+        "budget_M": 145
+    },
+    {
+        "film": "Toy Story 3",
+        "year": 2010,
+        "genre": "Animation",
+        "worldwide_Gross_M": 1063,
+        "budget_M": 200
+    },
+    {
+        "film": "2012",
+        "year": 2009,
+        "genre": "Action",
+        "worldwide_Gross_M": 768,
+        "budget_M": 200
+    },
+    {
+        "film": "Alice in Wonderland",
+        "year": 2010,
+        "genre": "Adventure",
+        "worldwide_Gross_M": 1024,
+        "budget_M": 200
+    },
+    {
+        "film": "The Dark Knight",
+        "year": 2008,
+        "genre": "Thriller",
+        "worldwide_Gross_M": 999,
+        "budget_M": 185
+    },
+    {
+        "film": "Avatar",
+        "year": 2009,
+        "genre": "Action",
+        "worldwide_Gross_M": 2784,
+        "budget_M": 237
+    },
+    {
+        "film": "Transformers: Dark of the Moon",
+        "year": 2011,
+        "genre": "Action",
+        "worldwide_Gross_M": 1123,
+        "budget_M": 195
+    },
+    {
+        "film": "Iron Man 2",
+        "year": 2010,
+        "genre": "Action",
+        "worldwide_Gross_M": 622 ,
+        "budget_M": 200
+    },
+    {
+        "film": "Kung Fu Panda 2",
+        "year": 2011,
+        "genre": "Animation",
+        "worldwide_Gross_M": 663,
+        "budget_M": 150
+    },
+    {
+        "film": "Shrek the Third",
+        "year": 2007,
+        "genre": "Animation",
+        "worldwide_Gross_M": 799,
+        "budget_M": 160
+    },
+    {
+        "film": "Harry Potter and the Half-Blood Prince",
+        "year": 2009,
+        "genre": "Adventure",
+        "worldwide_Gross_M": 934,
+        "budget_M": 250
+    },
+    {
+        "film": "Inception" ,
+        "year": 2010,
+        "genre": "Action",
+        "worldwide_Gross_M": 824,
+        "budget_M": 160
+    },
+    {
+        "film": "The Twilight Saga: New Moon",
+        "year": 2009,
+        "genre": "Drama",
+        "worldwide_Gross_M": 710,
+        "budget_M": 50
+    },
+    {
+        "film": "Harry Potter and the Deathly Hallows Part 1",
+        "year": 2010,
+        "genre": "Adventure",
+        "worldwide_Gross_M": 955,
+        "budget_M": 125
+    },
+    {
+        "film": "Up",
+        "year": 2009,
+        "genre": "Animation",
+        "worldwide_Gross_M": 731,
+        "budget_M": 175
+    },
+    {
+        "film": "Pirates of the Caribbean: At world's End",
+        "year": 2007,
+        "genre": "Action",
+        "worldwide_Gross_M": 961,
+        "budget_M": 300
+    },
+    {
+        "film": "Transformers",
+        "year": 2007,
+        "genre": "Action",
+        "worldwide_Gross_M": 708,
+        "budget_M": 150
+    },
+    {
+        "film": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "year": 2008,
+        "genre": "Action",
+        "worldwide_Gross_M": 787,
+        "budget_M": 185
+    },
+    {
+        "film": "Shrek Forever After",
+        "year": 2010,
+        "genre": "Animation",
+        "worldwide_Gross_M": 749,
+        "budget_M": 165
+    },
+    {
+        "film": "The Twilight Saga: Eclipse",
+        "year": 2010,
+        "genre": "Drama",
+        "worldwide_Gross_M": 694,
+        "budget_M": 68
+    },
+    {
+        "film": "Hancock",
+        "year": 2008,
+        "genre": "Action",
+        "worldwide_Gross_M": 624,
+        "budget_M": 150
+    },
+    {
+        "film": "Ice Age: Dawn of the Dinosaurs",
+        "year": 2009,
+        "genre": "Animation",
+        "worldwide_Gross_M": 887,
+        "budget_M": 90
+    },
+    {
+        "film": "Fast Five",
+        "year": 2011,
+        "genre": "Action",
+        "worldwide_Gross_M": 626,
+        "budget_M": 125
+    },
+    {
+        "film": "Kung Fu Panda",
+        "year": 2008,
+        "genre": "Animation",
+        "worldwide_Gross_M": 632,
+        "budget_M": 200
+    },
+    {
+        "film": "Ratatouille",
+        "year": 2007,
+        "genre": "Animation",
+        "worldwide_Gross_M": 621,
+        "budget_M": 150
+    },
+    {
+        "film": "Transformers: Revenge of the Fallen",
+        "year": 2009,
+        "genre": "Action",
+        "worldwide_Gross_M": 836,
+        "budget_M": 210
+    },
+    {
+        "film": "Twilight: Breaking Dawn",
+        "year": 2011,
+        "genre": "Romance",
+        "worldwide_Gross_M": 702,
+        "budget_M": 110
+    },
+    {
+        "film": "Spider-Man 3",
+        "year": 2007,
+        "genre": "Action",
+        "worldwide_Gross_M": 891,
+        "budget_M": 258
+    },
+    {
+        "film": "Harry Potter and the Order of the Phoenix",
+        "year": 2007,
+        "genre": "Adventure",
+        "worldwide_Gross_M": 940,
+        "budget_M": 150
+    }
+]
